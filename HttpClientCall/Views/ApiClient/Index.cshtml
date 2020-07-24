@@ -1,0 +1,16 @@
+﻿@model IEnumerable<HttpClientCall.Models.ApiModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div>
+    @foreach (var item in Model)
+    {
+        <ul>@item.Country</ul>
+        <ul>@item.Slug</ul>
+        <ul>@item.ISO2</ul>
+        <hr />
+    }
+</div>
+

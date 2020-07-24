@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientCall", "HttpClientCall\HttpClientCall.csproj", "{8B50B298-DCD5-4A5D-837F-A95AEF91E4C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B50B298-DCD5-4A5D-837F-A95AEF91E4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B50B298-DCD5-4A5D-837F-A95AEF91E4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B50B298-DCD5-4A5D-837F-A95AEF91E4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B50B298-DCD5-4A5D-837F-A95AEF91E4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {202A0143-4C81-43D7-96E1-E429ECA0806E}
+	EndGlobalSection
+EndGlobal
