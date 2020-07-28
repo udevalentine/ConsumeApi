@@ -108,3 +108,5 @@ C:\Users\udevalentine\Documents\Mine\HttpClientCall\HttpClientCall\obj\Debug\net
 C:\Users\udevalentine\Documents\Mine\HttpClientCall\HttpClientCall\obj\Debug\netcoreapp3.1\HttpClientCall.pdb
 C:\Users\udevalentine\Documents\Mine\HttpClientCall\HttpClientCall\obj\Debug\netcoreapp3.1\HttpClientCall.genruntimeconfig.cache
 C:\Users\udevalentine\Documents\Mine\HttpClientCall\HttpClientCall\obj\Debug\netcoreapp3.1\Razor\Views\ApiClient\Index.cshtml.g.cs
+C:\Users\udevalentine\Documents\Mine\HttpClientCall\HttpClientCall\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\udevalentine\Documents\Mine\HttpClientCall\HttpClientCall\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs

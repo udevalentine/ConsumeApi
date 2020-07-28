@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace HttpClientCall.Api
@@ -46,6 +47,26 @@ namespace HttpClientCall.Api
             var requestUrl = CreateRequestUri(string.Format(System.Globalization.CultureInfo.InvariantCulture,
                 "countries"));
             return await GetAsync<List<ApiModel>>(requestUrl);
+        }
+        public async Task<UserModel> AuthenticateUser(UserLogin model)
+        {
+            var requestUrl = CreateRequestUri(string.Format(System.Globalization.CultureInfo.InvariantCulture,
+                "Home/myLogin"));
+            return await PostAsync(requestUrl, model);
+        }
+        private async Task<UserModel> PostAsync(Uri requestUrl, UserLogin content)
+        {
+            //addHeaders();
+            var response = await _httpClient.PostAsync(requestUrl.ToString(), CreateHttpContent<UserLogin>(content));
+            response.EnsureSuccessStatusCode();
+            var data =await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<UserModel>(data);
+        }
+        private HttpContent CreateHttpContent<T>(T content)
+        {
+            var json = JsonConvert.SerializeObject(content);
+            return new StringContent(json, Encoding.UTF8, "application/json");
+
         }
 
     }
